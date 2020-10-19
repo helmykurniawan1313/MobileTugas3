@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/head"
+        style="@style/CollumnsHead"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nilai_mahasiswa"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/head"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginTop="16dp">
+            <TextView
+                style="@style/CollumnsHead"
+                android:layout_width="80dp"
+                android:layout_column="0"
+                android:text="NPM"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/CollumnsHead"
+                android:text="Nama"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/CollumnsHead"
+                android:text="Nilai"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/ItemStyle"
+                android:text="18082010035" />
+
+            <TextView
+                style="@style/ItemStyle"
+                android:text="Helmy K" />
+            <TextView
+                style="@style/ItemStyle"
+                android:text="80" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="9dp">
+            <TextView
+                style="@style/ItemStyle"
+                android:text="18082010089" />
+            <TextView
+                style="@style/ItemStyle"
+                android:text="Indah P" />
+            <TextView
+                style="@style/ItemStyle"
+                android:text="78" />
+        </TableRow>
+        <TableRow android:padding="8dp">
+            <TextView
+                style="@style/ItemStyle"
+                android:text="18082010099" />
+            <TextView
+                style="@style/ItemStyle"
+                android:text="Rachmadani" />
+            <TextView
+                style="@style/ItemStyle"
+                android:text="81" />
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_below="@id/tablelayout"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:text="Tutup"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+</RelativeLayout>
